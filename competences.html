@@ -1,28 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Compétences</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Compétences</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Compétences</h1>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="competences.html">Compétences</a>
-        <a href="projets.html">Projets</a>
-        <a href="preuves.html">Preuves</a>
-        <a href="analyse.html">Analyse</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<h1>Mes Compétences</h1>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="competences.html">Compétences</a>
+<a href="projets.html">Projets</a>
+</nav>
 </header>
 
 <section>
-    <h2>Mes compétences</h2>
-    <p>À compléter avec tes compétences BUT</p>
+<h2>Compétences</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Réseaux</h3>
+<p>
+Configuration VLAN, routage, DHCP et DNS. Mise en place d’infrastructures réseau et résolution de problèmes de connectivité.
+</p>
+</div>
+
+<div class="card">
+<h3>Cybersécurité</h3>
+<p>
+Sécurisation des systèmes et réseaux, configuration de firewall, gestion des accès et protection contre les menaces.
+</p>
+</div>
+
+<!-- TELEPHONIE AVEC LIEN -->
+<div class="card large">
+
+<div class="card-content">
+
+<div class="text">
+<h3>📞 Téléphonie sur IP (VoIP)</h3>
+
+<p>
+Dans le cadre du TP R316, j’ai déployé une infrastructure de téléphonie sur IP à l’aide d’un IPBX Xivo.
+J’ai configuré des téléphones SIP, créé des utilisateurs et validé les communications internes.
+</p>
+
+<p>
+J’ai mis en place des interconnexions SIP :
+</p>
+
+<ul>
+<li>🔹 lien SIP privé entre deux sites</li>
+<li>🔹 lien SIP public vers un opérateur</li>
+</ul>
+
+<p>
+Une analyse réseau a été réalisée avec Wireshark afin d’étudier les flux SIP et RTP,
+ainsi que le codec G.711 utilisé pour la transmission de la voix.
+</p>
+
+<!-- BOUTON PREUVE -->
+<a href="documents/R316.pdf" target="_blank" class="btn">
+Voir la preuve (R316)
+</a>
+
+</div>
+
+<div class="image">
+<img src="images/telephonie1.png" alt="Téléphonie VoIP">
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+<h3>Développement</h3>
+<p>
+Création de sites web en HTML/CSS et scripts en Python.
+</p>
+</div>
+
+</div>
+
 </section>
+
+<footer>
+<p>© 2026 - Mon Portfolio</p>
+</footer>
 
 </body>
 </html>
