@@ -5,65 +5,294 @@
 <title>Portfolio - Meurphy</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- ========================= -->
+<!-- HEADER -->
+<!-- ========================= -->
 <header>
-<h1>Mon E-Portfolio</h1>
-<nav>
-<a href="#about">À propos</a>
-<a href="competences.html">Compétences</a>
-<a href="projets.html">Projets</a>
-<a href="preuves.html">Preuves</a>
-<a href="analyse.html">Analyse</a>
-<a href="#contact">Contact</a>
-</nav>
+    <div class="logo">Meurphy</div>
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
 <section class="hero">
-<h2>Étudiant BUT Réseaux & Télécommunications</h2>
-<p>Portfolio professionnel – Compétences & projets</p>
-<a href="projets.html" class="btn">Voir mes projets</a>
-</section>
 
-<section id="about">
-<h2>À propos</h2>
+    <div class="hero-overlay"></div>
 
-<div class="card">
-<p>
-Je suis étudiant en BUT Réseaux & Télécommunications.  
-Je m’intéresse aux réseaux, à la cybersécurité et à la téléphonie sur IP.
-</p>
-</div>
-
-<div class="card">
-<h3>🎯 Centres d’intérêt</h3>
-<p>
-Sport (MMA), technologies réseau, cybersécurité.
-</p>
-</div>
-
-<div class="card">
-<h3>🏫 Engagement</h3>
-<p>
-Membre du BDE – participation à l’organisation d’événements étudiants.
-</p>
-</div>
+    <div class="hero-content">
+        <h1>BIAHOUILA Meurphy</h1>
+        <h2>Étudiant en Réseaux & Télécommunications</h2>
+        <p>Parcours ROM – Réseau Opérateur et Multimédia</p>
+    </div>
 
 </section>
 
-<section id="contact">
-<h2>Contact</h2>
+<!-- ========================= -->
+<!-- À PROPOS -->
+<!-- ========================= -->
+<section id="about" class="about">
 
-<div class="card">
-<p>Email : tonmail@gmail.com</p>
-<p>GitHub : github.com/tonprofil</p>
-</div>
+    <h2 class="section-title">À propos</h2>
+
+    <div class="about-container">
+
+        <!-- IMAGE -->
+        <div class="about-image">
+            <div class="image-frame"></div>
+            <img src="images/meurphy.jpg" alt="photo">
+        </div>
+
+        <!-- CONTENU -->
+        <div class="about-content">
+
+            <div class="tabs">
+                <button class="tab active" onclick="openTab('presentation', this)">Présentation</button>
+                <button class="tab" onclick="openTab('soft', this)">Soft skills</button>
+                <button class="tab" onclick="openTab('passions', this)">Passions</button>
+            </div>
+
+            <div class="tab-content active" id="presentation">
+                <p>
+                    Étudiant en BUT Réseaux & Télécommunications, passionné par les technologies réseau,
+                    la cybersécurité et les systèmes de communication.
+                </p>
+                <p>
+                    Je développe progressivement mes compétences techniques à travers des projets concrets
+                    et des mises en situation professionnelles.
+                </p>
+            </div>
+
+            <div class="tab-content" id="soft">
+                <ul>
+                    <li>Esprit d’équipe</li>
+                    <li>Autonomie</li>
+                    <li>Rigueur</li>
+                    <li>Adaptabilité</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="passions">
+                <ul>
+                    <li>MMA</li>
+                    <li>Cybersécurité</li>
+                    <li>Technologies réseau</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<footer>
-<p>© 2026 - Mon Portfolio</p>
-</footer>
+<!-- ========================= -->
+<!-- COMPÉTENCES -->
+<!-- ========================= -->
+<section id="skills" class="skills section">
+
+    <h2 class="section-title">Compétences</h2>
+
+    <div class="skills-grid">
+
+        <!-- RÉSEAUX -->
+        <div class="skill-card">
+            <h3>Réseaux</h3>
+
+            <div class="skill-item">
+                <span>Cisco</span>
+                <div class="progress">
+                    <div class="progress-bar" data-percent="85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>VLAN / DHCP / DNS</span>
+                <div class="progress">
+                    <div class="progress-bar" data-percent="80%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CYBERSÉCURITÉ -->
+        <div class="skill-card">
+            <h3>Cybersécurité</h3>
+
+            <div class="skill-item">
+                <span>Firewall</span>
+                <div class="progress">
+                    <div class="progress-bar" data-percent="70%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>Analyse réseau</span>
+                <div class="progress">
+                    <div class="progress-bar" data-percent="65%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VOIP -->
+        <div class="skill-card">
+            <h3>VoIP</h3>
+
+            <div class="skill-item">
+                <span>Xivo</span>
+                <div class="progress">
+                    <div class="progress-bar" data-percent="75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>SIP / RTP</span>
+                <div class="progress">
+                    <div class="progress-bar" data-percent="70%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEV -->
+        <div class="skill-card">
+            <h3>Développement</h3>
+
+            <div class="skill-item">
+                <span>HTML / CSS</span>
+                <div class="progress">
+                    <div class="progress-bar" data-percent="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>Python</span>
+                <div class="progress">
+                    <div class="progress-bar" data-percent="60%"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PROJETS -->
+<!-- ========================= -->
+<section id="projects" class="projects section">
+
+    <h2 class="section-title">Projets</h2>
+
+    <div class="timeline">
+
+        <!-- PROJET 1 -->
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>Projet Réseau Entreprise</h3>
+                <p>Conception d’une infrastructure réseau avec VLAN, DHCP et routage.</p>
+            </div>
+            <span class="timeline-date">2025</span>
+        </div>
+
+        <!-- PROJET 2 -->
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h3>Audit Cybersécurité</h3>
+                <p>Analyse des vulnérabilités d’un système et mise en place de solutions.</p>
+            </div>
+            <span class="timeline-date">2024</span>
+        </div>
+
+        <!-- PROJET 3 -->
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>Infrastructure VoIP</h3>
+                <p>Déploiement d’un IPBX Xivo avec configuration SIP et téléphones IP.</p>
+            </div>
+            <span class="timeline-date">2024</span>
+        </div>
+
+        <!-- PROJET 4 -->
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h3>Application Web</h3>
+                <p>Développement d’un site web dynamique en HTML, CSS et JavaScript.</p>
+            </div>
+            <span class="timeline-date">2023</span>
+        </div>
+
+        <!-- PROJET 5 -->
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>Supervision Réseau</h3>
+                <p>Mise en place d’outils de monitoring pour surveiller les équipements réseau.</p>
+            </div>
+            <span class="timeline-date">2023</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+<section id="contact" class="contact section">
+
+    <h2 class="section-title">Me contacter</h2>
+
+    <p class="contact-subtitle">
+        Un projet ? En plein recrutement ? Envie de dire bonjour ? <br>
+        N'hésitez plus, entrons en contact !
+    </p>
+
+    <div class="contact-container">
+
+        <!-- FORMULAIRE -->
+        <form class="contact-form">
+
+            <input type="email" placeholder="Votre mail" required>
+            <input type="text" placeholder="Objet" required>
+
+            <textarea placeholder="Message" rows="6" required></textarea>
+
+            <div class="captcha">
+                <label>5 - 1 =</label>
+                <input type="number" required>
+            </div>
+
+            <button type="submit" class="btn">Envoyer</button>
+
+        </form>
+
+        <!-- DROITE -->
+        <div class="contact-links">
+
+            <a href="#" class="contact-btn">
+                🔗 LinkedIn
+            </a>
+
+            <a href="documents/CV_Meurphy.pdf" download class="contact-btn">
+    ⬇ Télécharger mon CV
+</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SCRIPT -->
+<!-- ========================= -->
+<script src="script.js"></script>
 
 </body>
 </html>
