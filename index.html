@@ -25,7 +25,6 @@
 <!-- HERO -->
 <!-- ========================= -->
 <section class="hero">
-
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
@@ -33,7 +32,6 @@
         <h2>Étudiant en Réseaux & Télécommunications</h2>
         <p>Parcours ROM – Réseau Opérateur et Multimédia</p>
     </div>
-
 </section>
 
 <!-- ========================= -->
@@ -56,10 +54,12 @@
 
             <div class="tabs">
                 <button class="tab active" onclick="openTab('presentation', this)">Présentation</button>
+                <button class="tab" onclick="openTab('languages', this)">Langues</button>
                 <button class="tab" onclick="openTab('soft', this)">Soft skills</button>
                 <button class="tab" onclick="openTab('passions', this)">Passions</button>
             </div>
 
+            <!-- PRESENTATION -->
             <div class="tab-content active" id="presentation">
                 <p>
                     Étudiant en BUT Réseaux & Télécommunications, passionné par les technologies réseau,
@@ -71,6 +71,26 @@
                 </p>
             </div>
 
+            <!-- LANGUES -->
+            <div class="tab-content" id="languages">
+                <div class="languages">
+
+                    <div class="lang">
+                        <img src="France.png" alt="français">
+                        <h4>Français</h4>
+                        <p>Langue maternelle</p>
+                    </div>
+
+                    <div class="lang">
+                        <img src="uk.png" alt="anglais">
+                        <h4>Anglais</h4>
+                        <p>Niveau B2</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SOFT SKILLS -->
             <div class="tab-content" id="soft">
                 <ul>
                     <li>Esprit d’équipe</li>
@@ -80,6 +100,7 @@
                 </ul>
             </div>
 
+            <!-- PASSIONS -->
             <div class="tab-content" id="passions">
                 <ul>
                     <li>MMA</li>
@@ -98,12 +119,10 @@
 <!-- COMPÉTENCES -->
 <!-- ========================= -->
 <section id="skills" class="skills section">
-
     <h2 class="section-title">Compétences</h2>
 
     <div class="skills-grid">
 
-        <!-- RÉSEAUX -->
         <div class="skill-card">
             <h3>Réseaux</h3>
 
@@ -122,7 +141,6 @@
             </div>
         </div>
 
-        <!-- CYBERSÉCURITÉ -->
         <div class="skill-card">
             <h3>Cybersécurité</h3>
 
@@ -141,7 +159,6 @@
             </div>
         </div>
 
-        <!-- VOIP -->
         <div class="skill-card">
             <h3>VoIP</h3>
 
@@ -160,7 +177,6 @@
             </div>
         </div>
 
-        <!-- DEV -->
         <div class="skill-card">
             <h3>Développement</h3>
 
@@ -180,19 +196,15 @@
         </div>
 
     </div>
-
 </section>
 
 <!-- ========================= -->
 <!-- PROJETS -->
 <!-- ========================= -->
 <section id="projects" class="projects section">
-
     <h2 class="section-title">Projets</h2>
 
     <div class="timeline">
-
-        <!-- PROJET 1 -->
         <div class="timeline-item left">
             <div class="timeline-content">
                 <h3>Projet Réseau Entreprise</h3>
@@ -200,52 +212,13 @@
             </div>
             <span class="timeline-date">2025</span>
         </div>
-
-        <!-- PROJET 2 -->
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <h3>Audit Cybersécurité</h3>
-                <p>Analyse des vulnérabilités d’un système et mise en place de solutions.</p>
-            </div>
-            <span class="timeline-date">2024</span>
-        </div>
-
-        <!-- PROJET 3 -->
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <h3>Infrastructure VoIP</h3>
-                <p>Déploiement d’un IPBX Xivo avec configuration SIP et téléphones IP.</p>
-            </div>
-            <span class="timeline-date">2024</span>
-        </div>
-
-        <!-- PROJET 4 -->
-        <div class="timeline-item right">
-            <div class="timeline-content">
-                <h3>Application Web</h3>
-                <p>Développement d’un site web dynamique en HTML, CSS et JavaScript.</p>
-            </div>
-            <span class="timeline-date">2023</span>
-        </div>
-
-        <!-- PROJET 5 -->
-        <div class="timeline-item left">
-            <div class="timeline-content">
-                <h3>Supervision Réseau</h3>
-                <p>Mise en place d’outils de monitoring pour surveiller les équipements réseau.</p>
-            </div>
-            <span class="timeline-date">2023</span>
-        </div>
-
     </div>
-
 </section>
 
 <!-- ========================= -->
 <!-- CONTACT -->
 <!-- ========================= -->
 <section id="contact" class="contact section">
-
     <h2 class="section-title">Me contacter</h2>
 
     <p class="contact-subtitle">
@@ -255,12 +228,9 @@
 
     <div class="contact-container">
 
-        <!-- FORMULAIRE -->
         <form class="contact-form">
-
             <input type="email" placeholder="Votre mail" required>
             <input type="text" placeholder="Objet" required>
-
             <textarea placeholder="Message" rows="6" required></textarea>
 
             <div class="captcha">
@@ -269,29 +239,16 @@
             </div>
 
             <button type="submit" class="btn">Envoyer</button>
-
         </form>
 
-        <!-- DROITE -->
         <div class="contact-links">
-
-            <a href="#" class="contact-btn">
-                🔗 LinkedIn
-            </a>
-
-            <a href="CV_Meurphy.pdf" download class="contact-btn">
-    ⬇ Télécharger mon CV
-</a>
-
+            <a href="#" class="contact-btn">🔗 LinkedIn</a>
+            <a href="CV_Meurphy.pdf" download class="contact-btn">⬇ Télécharger mon CV</a>
         </div>
 
     </div>
-
 </section>
 
-<!-- ========================= -->
-<!-- SCRIPT -->
-<!-- ========================= -->
 <script src="script.js"></script>
 
 </body>

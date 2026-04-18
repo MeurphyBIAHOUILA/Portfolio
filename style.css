@@ -531,3 +531,45 @@ nav a:hover {
         margin-bottom: 10px;
     }
 }
+/* ========================= */
+/* LANGUES */
+/* ========================= */
+
+.languages {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+/* CARTE LANGUE */
+.lang {
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* IMAGE (TAILLE PRO) */
+.lang img {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* TITRE */
+.lang h4 {
+    color: #0891b2;
+    margin-bottom: 5px;
+}
+
+/* TEXTE */
+.lang p {
+    font-size: 14px;
+    color: #cbd5f5;
+}
+
+/* HOVER STYLE WADOUX */
+.lang:hover {
+    transform: translateY(-6px);
+}
