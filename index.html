@@ -14,9 +14,12 @@
 <header>
     <div class="logo">Meurphy</div>
     <nav>
-        <a href="#about">À propos</a>
+        <a href="#about">Accueil</a>
         <a href="#skills">Compétences</a>
         <a href="#projects">Projets</a>
+		<a href="#experience">Expériences</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -26,7 +29,6 @@
 <!-- ========================= -->
 <section class="hero">
     <div class="hero-overlay"></div>
-
     <div class="hero-content">
         <h1>BIAHOUILA Meurphy</h1>
         <h2>Étudiant en Réseaux & Télécommunications</h2>
@@ -39,7 +41,7 @@
 <!-- ========================= -->
 <section id="about" class="about">
 
-    <h2 class="section-title">À propos</h2>
+    <h2 class="section-title">Accueil</h2>
 
     <div class="about-container">
 
@@ -62,12 +64,14 @@
             <!-- PRESENTATION -->
             <div class="tab-content active" id="presentation">
                 <p>
-                    Étudiant en BUT Réseaux & Télécommunications, passionné par les technologies réseau,
-                    la cybersécurité et les systèmes de communication.
+                    Étudiant en BUT Réseaux & Télécommunications, actuellement en alternance en tant qu’Administrateur Infrastructure Réseau chez Aubert & Duval,
+					suite à une première expérience réussie en stage au sein de l’entreprise.
                 </p>
                 <p>
-                    Je développe progressivement mes compétences techniques à travers des projets concrets
-                    et des mises en situation professionnelles.
+                    J’interviens sur des projets concrets liés aux infrastructures réseau, à la cybersécurité et à la téléphonie IP,
+					notamment sur la migration de réseau, la configuration de VPN IPsec et le déploiement de solutions VoIP. 
+                    Cette continuité en alternance reflète la confiance accordée à mon travail et renforce mon engagement à développer des compétences
+					techniques solides en environnement professionnel.
                 </p>
             </div>
 
@@ -92,12 +96,15 @@
 
             <!-- SOFT SKILLS -->
             <div class="tab-content" id="soft">
-                <ul>
-                    <li>Esprit d’équipe</li>
-                    <li>Autonomie</li>
-                    <li>Rigueur</li>
-                    <li>Adaptabilité</li>
-                </ul>
+               <ul>
+                   <li>Esprit d’analyse</li>
+                   <li>Travail en équipe</li>
+                   <li>Autonomie</li>
+                   <li>Rigueur</li>
+                   <li>Réactivité</li>
+                   <li>Capacité d’apprentissage</li>
+                   <li>Adaptabilité</li>
+               </ul>
             </div>
 
             <!-- PASSIONS -->
@@ -123,76 +130,74 @@
 
     <div class="skills-grid">
 
+        <!-- SYSTEMES -->
+        <div class="skill-card">
+            <h3>Systèmes</h3>
+            <ul>
+                <li>Windows Server / Linux</li>
+                <li>Virtualisation : VMware</li>
+                <li>Conteneurisation : Docker</li>
+            </ul>
+        </div>
+
+        <!-- RESEAUX -->
         <div class="skill-card">
             <h3>Réseaux</h3>
-
-            <div class="skill-item">
-                <span>Cisco</span>
-                <div class="progress">
-                    <div class="progress-bar" data-percent="85%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <span>VLAN / DHCP / DNS</span>
-                <div class="progress">
-                    <div class="progress-bar" data-percent="80%"></div>
-                </div>
-            </div>
+            <ul>
+                <li>Configuration équipements (switchs, routeurs, AP)</li>
+                <li>VLAN (802.1Q)</li>
+                <li>VoIP (téléphonie IP)</li>
+            </ul>
         </div>
 
+        <!-- PROTOCOLES -->
+        <div class="skill-card">
+            <h3>Protocoles</h3>
+            <ul>
+                <li>Routage : OSPF, BGP</li>
+                <li>TCP/IP, ICMP, ARP</li>
+                <li>DHCP, DNS, NAT / PAT</li>
+                <li>MPLS</li>
+            </ul>
+        </div>
+
+        <!-- SECURITE -->
         <div class="skill-card">
             <h3>Cybersécurité</h3>
-
-            <div class="skill-item">
-                <span>Firewall</span>
-                <div class="progress">
-                    <div class="progress-bar" data-percent="70%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <span>Analyse réseau</span>
-                <div class="progress">
-                    <div class="progress-bar" data-percent="65%"></div>
-                </div>
-            </div>
+            <ul>
+                <li>Firewall : Fortinet, Stormshield</li>
+                <li>VPN IPsec</li>
+                <li>Gestion des règles de sécurité</li>
+            </ul>
         </div>
 
+        <!-- OUTILS -->
         <div class="skill-card">
-            <h3>VoIP</h3>
-
-            <div class="skill-item">
-                <span>Xivo</span>
-                <div class="progress">
-                    <div class="progress-bar" data-percent="75%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <span>SIP / RTP</span>
-                <div class="progress">
-                    <div class="progress-bar" data-percent="70%"></div>
-                </div>
-            </div>
+            <h3>Outils & Monitoring</h3>
+            <ul>
+                <li>Zabbix (supervision)</li>
+                <li>SNMP</li>
+                <li>GLPI / ServiceNow (ITSM)</li>
+                <li>Ansible (automatisation)</li>
+            </ul>
         </div>
 
+        <!-- RESEAUX AVANCES -->
         <div class="skill-card">
-            <h3>Développement</h3>
+            <h3>Réseaux avancés</h3>
+            <ul>
+                <li>QoS (Quality of Service)</li>
+                <li>SD-WAN</li>
+            </ul>
+        </div>
 
-            <div class="skill-item">
-                <span>HTML / CSS</span>
-                <div class="progress">
-                    <div class="progress-bar" data-percent="80%"></div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <span>Python</span>
-                <div class="progress">
-                    <div class="progress-bar" data-percent="60%"></div>
-                </div>
-            </div>
+        <!-- SUPPORT -->
+        <div class="skill-card">
+            <h3>Support & Analyse</h3>
+            <ul>
+                <li>Troubleshooting réseau</li>
+                <li>Analyse d’incidents</li>
+            </ul>
         </div>
 
     </div>
@@ -248,10 +253,108 @@
 
     </div>
 </section>
+<!-- ========================= -->
+<!-- EXPERIENCE -->
+<!-- ========================= -->
+
+
+<section id="experience" class="projects section">
+    <h2 class="section-title">Expériences</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>Administrateur Infrastructure Réseau</h3>
+                <h4>Aubert & Duval – Alternance</h4>
+                <p>
+                    Migration du cœur de réseau vers une nouvelle salle informatique<br>
+                    Analyse et résolution des incidents réseau en coordination avec l’équipe technique<br>
+                    Configuration de VPN IPsec et gestion des règles de pare-feu<br>
+                    Déploiement et configuration d’une solution VoIP (SFR Business)<br>
+                    Participation à la refonte de l’infrastructure LAN / WLAN
+                </p>
+            </div>
+            <span class="timeline-date"> En Cours  </span>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h3>Technicien Support Informatique</h3>
+                <h4>Aubert & Duval – Stage</h4>
+                <p>
+                    Préparation et déploiement des postes de travail pour les utilisateurs<br>
+                    Installation et configuration des systèmes d’exploitation et logiciels<br>
+                    Gestion des comptes utilisateurs et des ressources sous Active Directory<br>
+                    Support technique et résolution des incidents utilisateurs<br>
+                    Maintenance et suivi du bon fonctionnement des infrastructures IT
+                </p>
+            </div>
+            <span class="timeline-date">2025</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- PORTFOLIO -->
+<!-- ========================= -->
+
+<section id="portfolio" class="section">
+    <h2 class="section-title">Portfolio</h2>
+
+    <div class="portfolio">
+
+        <div class="portfolio-card">
+            <h3>Site Web</h3>
+            <p>Création d’un site HTML/CSS</p>
+        </div>
+
+        <div class="portfolio-card">
+            <h3>Projet Réseau</h3>
+            <p>Simulation Packet Tracer</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- CERTIFICATIONS -->
+<!-- ========================= -->
+
+<section id="certifications" class="section">
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="certifications">
+
+        <div class="cert-card">
+            <img src="stormshield.png">
+            <h3>Stormshield</h3>
+            <p>Certification en sécurité réseau (Firewall & protection)</p>
+            <a href="stormshield.pdf" target="_blank">Voir certificat</a>
+        </div>
+
+        <div class="cert-card">
+            <img src="3cx.png">
+            <h3>3CX Basic</h3>
+            <p>Certification VoIP et téléphonie IP</p>
+            <a href="3cx.pdf" target="_blank">Voir certificat</a>
+        </div>
+
+        <div class="cert-card">
+            <img src="anssi.png">
+            <h3>ANSSI</h3>
+            <p>Sensibilisation à la cybersécurité</p>
+            <a href="anssi.pdf" target="_blank">Voir certificat</a>
+        </div>
+
+    </div>
+</section>
 
 <!-- ========================= -->
 <!-- CONTACT -->
 <!-- ========================= -->
+
 <section id="contact" class="contact section">
     <h2 class="section-title">Me contacter</h2>
 
