@@ -410,21 +410,30 @@
 
     <div class="contact-container">
 
-        <form class="contact-form">
-            <input type="email" placeholder="Votre mail" required>
-            <input type="text" placeholder="Objet" required>
-            <textarea placeholder="Message" rows="6" required></textarea>
+        <form class="contact-form" action="https://formspree.io/f/meevylaz" method="POST">
 
-            <div class="captcha">
-                <label>5 - 1 =</label>
-                <input type="number" required>
-            </div>
+    <input type="email" name="email" placeholder="Votre mail" required>
 
-            <button type="submit" class="btn">Envoyer</button>
-        </form>
+    <input type="text" name="subject" placeholder="Objet" required>
+
+    <textarea name="message" placeholder="Message" rows="6" required></textarea>
+
+    <div class="captcha">
+        <label>5 - 1 =</label>
+        <input type="number" required>
+    </div>
+
+    <!-- Anti-spam -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <!-- IMPORTANT -->
+    <input type="hidden" name="_format" value="plain">
+
+    <button type="submit" class="btn">Envoyer</button>
+
+</form>
 
         <div class="contact-links">
-            <a href="#" class="contact-btn">🔗 LinkedIn</a>
             <a href="CV_Meurphy.pdf" download class="contact-btn">⬇ Télécharger mon CV</a>
         </div>
 
