@@ -678,3 +678,54 @@ nav a:hover {
     border-radius: 10px;
     margin-bottom: 15px;
 }
+.passion-card img {
+    width: 70px;       /* taille fixe (petit et propre) */
+    height: 70px;      /* même hauteur = alignement parfait */
+    object-fit: cover; /* évite les déformations */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.passions-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* passe à la ligne si écran petit */
+}
+
+.passion-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px; /* largeur carte */
+}
+
+.passion-card img {
+    width: 90px;      /* plus grand */
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.passion-card h3 {
+    color: #0891b2;
+    margin: 0;
+}
+
+.passion-card p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #ccc;
+}
+.passion-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 320px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.passion-card:hover {
+    background: rgba(255,255,255,0.05);
+}
